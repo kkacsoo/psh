@@ -1,3 +1,9 @@
+:root{
+    --point-color:#286abd;
+    --title-size:32px;
+    --title-weight:900;
+    --none-weight:100;
+}
 .header__logo{
     display: flex;
     justify-content: center;
@@ -18,7 +24,7 @@ header{
 .nav__wrap{
     display: flex;
     height: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -67,6 +73,7 @@ header{
     background-position: center;
     transform: translate(-50%, -50%);
     background-size: cover;
+
 }
 .mainvisual .mainvisual__typo  {
     position: absolute;
@@ -74,3 +81,206 @@ header{
     left: 20px;
 }
 
+.subvisual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subvisual .subvisual__subbanner{
+    position: static;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url('../imgs/main_bg01.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.subvisual__cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+
+
+}
+.subvisual__typo{
+    position: absolute;
+
+}
+.subvisual__typo H2{
+    color: var(--point-color);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+}
+.subvisual__button{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    padding: 70px 9px 9px 9px;
+    border-bottom: 3px solid #ccc;
+    font-size: 16px;
+}
+
+.subvisual__mainbutton{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background-color: #e0ddd8;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.subvisual__mainbutton i{
+    font-size: 24px;
+    color: #fff;
+}
+.subvi{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subvi__cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.subvi__cont .subvi__typo{
+    position: absolute;
+    text-align: right;
+}
+.subvi__typo__button{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    padding: 70px 9px 9px 9px;
+    border-bottom: 3px solid #ccc;
+    font-size: 16px;
+    right: 0px;
+}
+.subvi__typo H2{
+    color : var(--point-color);
+    font-size: var(--title-size);
+    font-weight: 700;
+}
+.subvi .subvi__subbanner{
+    background-image: url("../imgs/main_bg02.jpg");
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.subvi__botton{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background-color: #b0c3d7;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.subvi__botton i{
+    font-size: 24px;
+    color: #fff;
+}
+.slider{
+    width: 1000px;
+    margin: 0 auto;
+}
+.slider p{
+    width: 20%;
+}
+.slider p img{
+    width: 100%;
+    opacity: 0.5;
+}
+.slick-list{
+    overflow:initial !important;
+}
+.slick-active img{
+    opacity: 1 !important;
+}
+.backbanner{
+    width: 100%;
+    height: 100%;
+}
+.backbanner__cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/main_bg_water_pc.jpg');
+    background-position: center;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+.backcontent{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.backcontent p{
+    text-align: center;
+    margin-top: 20px;
+}
+.backcontent .backcontent__botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 7px solid #286abd;
+    box-sizing: border-box;
+}
+.backcontent__botton .fa-search:before {
+    content: "\f002";
+    font-size: 18px;
+}
+.bottombanner{
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+.bottombanner__img{
+    width: 50%;
+    overflow: hidden;
+}
+.bottombanner__img:hover img{
+    transform: scale(1.2);
+}
+.bottombanner__img img{
+    transition: all 0.7s;
+}
+.img01_typo{
+
+}
+.img02_typo{
+
+}
