@@ -8,60 +8,59 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;900&display=swap" rel="stylesheet">
-    <script src="js/main.js" defer ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/3623abe4b8.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer ></script>
 </head>
 <body>
+    <!-- 헤더 시작 -->
     <header>
         <h1 class="header__logo">
-            <img src="imgs/logo.png" alt="">
+            <img src="imgs/logo.png" alt="오비오">
         </h1>
-        <nav>
-          <ul class="nav__wrap">
-              <li>회사소개</li>
-              <li>제품소개</li>
+        <nav class="nav__global">
+          <ul class="global__wrap">
+              <li data-link="#company">회사소개</li>
+              <li data-link="#product">제품소개</li>
               <li>기술소개</li>
               <li>홍보센터</li>
               <li class="last">고객센터</li>            
           </ul>
         </nav>
         <div class="header__menu">
-            <div class="header__menu--icon">
+            <div class="header__menu--bar menu__option">
                 <i class="fas fa-bars"></i>
             </div>
-            <div class="header__menu--search">
+            <div class="header__menu--search menu__option">
                 <i class="fas fa-search"></i>
             </div>
         </div>
     </header>
-    <div class="mainvisual">        
+    <!-- 헤더 끝 -->
+    <div id="home" class="mainvisual">        
         <div class="mainvisual__cont">
             <div class="mainvisual__typo">
                 <strong>CUSTOMER IMPRESSION</strong>
-                <H2>고객과의 약속이행</H2>
-                <span>고객사의 품질기준을 완벽하게 만족시켜드리겠습니다.</span>
+                <h2><b>고객과의</b> 약속이행</h2>
+                <span><b>고객사의 품질기준을</b> 완벽하게 만족시켜드리겠습니다.</span>
             </div>
         </div>
     </div>
-    <div class="subvisual">
-        <div class="subvisual__subbanner">
-        </div>
+    <div id="company" class="subvisual">
+        <div class="subvisual__subbanner"><img src="./imgs/15728452521.png" alt=""></div>
         <div class="subvisual__cont">
             <div class="subvisual__typo">
-                <strong>오비오 직수 정수기</strong>
-                <H2>OHC-7000D</H2>
-                <span>
+                <strong class="sub__title_style">오비오 <b>직수 정수기</b></strong>
+                <h2 class="main__title_style">OHC-7000D</h2>
+                <span class="basic_style">
                     위생적인 죽수 방식으로 제품 내부 유로부는 전기 분해 살균<br>
                     취수부 노즐은 UVC로 살균하여 오염으로부터 안심하실 수 있습니다.<br>
                     소비자 중심 설계로 불필요한 전기 소모는 최소화하고<br>
                     필터 교환은 원위치로 쉽게 하실 수 있습니다.
                 </span>
-                <p class="subvisual__button">
-                    VIEW MORE
-                </p>
+                <a class="subvisual__button">VIEW MORE</a>
             </div>
         </div>
         <div class="subvisual__mainbutton"><i class="fas fa-search"></i></div>
@@ -69,76 +68,68 @@
     <div class="subvi">
         <div class="subvi__cont">
             <div class="subvi__typo">
-                <strong>오비오 냉온 정수기</strong>
-                <H2>OHC-200U·500U</H2>
-                <span>
-                    4단계 필터시스템과 스테인리스 탱크, 분리형 출수구 적용으로<br>
-                    제품 내, 외부의 위생성과 사용편의성을 높였습니다.<br>
-                    현대적 감각의 슬림 디자인(데스크탑형/스탠드형)과 3가지 색상으로<br>
-                    선택의 폭이 넓고 공간활용도가 높습니다.<br>
-                    미려한 모던 디자인으로 어느 공간에나 잘 어울립니다.
+                <strong class="sub__title_style">오비오 <b>냉온 정수기</b></strong>
+                <H2 class="main__title_style">OHC-200U·500U</H2>
+                <span class="basic_style">
+                4단계 필터시스템과 스테인리스 탱크, 분리형 출수구 적용으로<br>
+                제품 내, 외부의 위생성과 사용편의성을 높였습니다.<br>
+                현대적 감각의 슬림 디자인(데스크탑형/스탠드형)과 3가지 색상으로<br>
+                선택의 폭이 넓고 공간활용도가 높습니다.<br>
+                미려한 모던 디자인으로 어느 공간에나 잘 어울립니다.
                 </span>
-                <p class="subvi__typo__button">
-                    VIEW MORE
-                </p>
-            </div>
-       
+                <a class="subvi__typo__button">
+                VIEW MORE</a>
+            </div>      
         </div>
-        <div class="subvi__subbanner"></div>
+        <div class="subvi__subbanner"><img src="./imgs/15767441941.png" alt=""></div>
         <div class="subvi__botton"><i class="fas fa-search"></i></div>
     </div>
-    <div class="subvisual02">
-        <h2>제품소개</h2>
+    <div id="product" class="subvisual02">
+        <h2><b>제품</b>소개</h2>
         <p>혁신적 기술과 차별화된 품질을 바탕으로 최고의 제품을 만듭니다.</p>
         <div class="subvisual02__butnav">
-            <span class="prev"><i class="fas fa-chevron-left"></i></span>
-            <span><i class="fas fa-search"></i></span>
-            <span class="next"><i class="fas fa-angle-right"></i></span>
+            <span class="prev"><i class="fas fa-chevron-left butnav__style"></i></span>
+            <span class="butnav__botton"><i class="fas fa-search butnav__style"></i></span>
+            <span class="next"><i class="fas fa-chevron-right butnav__style"></i></span>
         </div>
         <div class="slider">
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_01.png" alt="">
+                <strong>FHC-6000</strong>
+                <span>냉온수기</span>
             </p>
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_02.png" alt="">
+                <strong>OHC-7000D</strong>
+                <span>직수정수기</span>
             </p>
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_03.png" alt="">
+                <strong>OHC-200U</strong>
+                <span>냉온수기</span>
             </p>
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_04.png" alt="">
+                <strong>OHC-500U</strong>
+                <span>냉온수기</span>
             </p>
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_05.png" alt="">
+                <strong>FHC-9000</strong>
+                <span>냉온수기</span>
             </p>
-            <p>
+            <p class="slider__img">
                 <img src="imgs/good_img_06.png" alt="">
+                <strong>FHC-7000</strong>
+                <span>냉온수기</span>
             </p>
         </div>
     </div>
-    <script>
-        $(document).on("ready", function(){
-         $('.slider').slick({
-            infinite:true,
-            centerMode:true,
-            slidesToShow:3,
-            slidesToScroll:1,
-            arrows:false
-         });
-         
-         $(".next").on("click",function(){
-            $('.slider').slick("slickNext");
-         });
-         $(".prev").on("click",function(){
-            $('.slider').slick("slickPrev");
-         });
-        });
-    </script>
     <div class="backbanner">
         <div class="backbanner__cont">
             <div class="backcontent">
-                <p class="backcontent__tal01">회사소개</p>
-                <p class="backcontent__tal02">고객의 성공과 함께하는<br>
+                <p class="backcontent__tal01"><b>회사</b>소개</p>
+                <p class="backcontent__tal02"><b>고객의 성공</b>과 함께하는<br>
                                               최고의 파트너</p>
                 <p class="backcontent__tal03">1998년 설립 이후 냉온수기, 정수기, 커피머신 등<br>
                                               환겅가전 관련 분야에서 국내 최곡의 기술력을 보유한 연구개발중심의 제조 전문기업 입니다.</p>
@@ -149,9 +140,9 @@
     <div class="bottombanner">
         <div class="bottombanner__img01 bottombanner__img">
             <img src="imgs/main_bnr_img01_01.jpg">
-            <div class="img01_typo">
+            <div class="img_typo">
                 <strong>Consultation</strong>
-                <h2>상담문의</h2>
+                <h2><b>상담</b>문의</h2>
                 <span>
                     사업, 제품, 부품 관련 문의에 대해<br>
                     언제나 친절히 상담 드리겠습니다.
@@ -160,9 +151,9 @@
         </div>
         <div class="bottombanner__img02 bottombanner__img">
             <img src="imgs/main_bnr_img02.jpg">
-            <div class="img02_typo">
+            <div class="img_typo">
                 <strong>Recruitment</strong>
-                <h2>채용정보</h2>
+                <h2><b>채용</b>정보</h2>
                 <span>
                     각 직무별로 우수한 능력을<br>
                     보유한 인재를 모집하고 있습니다.
@@ -170,5 +161,45 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="footlog"><img src="./imgs/footer_logo.jpg" alt="오비오"></div>
+        <div class="footer__menu">
+            <ul>
+                <li>개인정보처리방침</li>
+                <li class="footer__menu_line">이메일 무단수집거부</li>
+                <li>찾아오시는길</li>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <ul>
+                <li>주소 : (우)18543 경기도 화성시 마도면 청원산단2길76</li>
+                <li>대표자 : 이은천</li>
+                <li>Tel : +82-31-357-7075</li>
+                <li>Fax : 031-357-7085</li>
+            </ul>
+            <p>COPYRIGHTS © 2018 OVIO ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+    <div class="top__bt" data-link="#home">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+<script>
+$(document).on("ready", function(){
+    $('.slider').slick({
+        centerMode:true,
+        slidesToShow:3,
+        slidesToScroll:1,
+        arrows:false
+    });
+    
+    $(".next").on("click",function(){
+        $('.slider').slick("slickNext");
+    });
+
+    $(".prev").on("click",function(){
+        $('.slider').slick("slickPrev");
+    });
+});
+</script>
 </body>
 </html>
