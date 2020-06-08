@@ -36,10 +36,16 @@ header{
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 85px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     z-index: 1;    
+}
+.global__header{
+    height: 85px;
+    transition: all 0.5s;
+}
+.global__header.on{
+    height: 65px;
 }
 .header__logo{
     display: flex;
@@ -47,11 +53,16 @@ header{
     align-items: center;
     margin-left: 20px;
 }
+.nav__global{
+    width: 45%;
+}
 .global__wrap{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    font-size: 20px;
+    font-weight: 500;
 }
 .global__wrap li{
     display: flex;
@@ -197,7 +208,7 @@ header{
 }
 .subvisual__typo{
     position: absolute;
-    left: 50%;
+    left: 46%;
     top:50%;
     transform: translate(-50%, -50%);
 }
@@ -205,7 +216,7 @@ header{
     position: relative;
     top:-50px;
     opacity: 0;
-    transition: top 2s,opacity 2s;
+    transition: top 1s,opacity 2s;
 }
 .subvisual__typo.on strong{
     top: 0;
@@ -215,21 +226,49 @@ header{
     font-weight: var(--font-minbold);
 }
 .subvisual__typo h2{
+    position: relative;
     margin-top: var(--subvisual-margin-top);
+    top: -25px;
+    opacity: 0;
+    transition: top 1s, opacity 2s;
+    transition-delay: 0.5s;
 }
+.subvisual__typo.on h2{
+    margin-top: var(--subvisual-margin-top);
+    top: 0px;
+    opacity: 1;
+}
+
+
 .subvisual__typo span{
     display: inline-block;
+    position: relative;
     line-height: var(--subvisual-line-height);
     margin-top: var(--subvisual-margin-top);
     margin-bottom: var(--subvisual-margin-bottom);
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+.subvisual__typo.on span{
+    opacity: 1;
 }
 .subvisual__button{
     display: block;
+    position: relative;
     width: 95px;
     padding: 9px;
     border-bottom: 3px solid #ccc;
     font-size: 16px;
     text-align: center;
+    top: -70px;
+    opacity: 0;
+    transition: top 2s, opacity 1.5s;
+    transition-delay: 1.5s;
+}
+.subvisual__typo.on .subvisual__button{
+    top: 0px;
+    opacity: 1;
 }
 .subvisual__mainbutton{
     position: absolute;
@@ -266,30 +305,66 @@ header{
 
 .subvi__typo strong{
     display: block;
+    position: relative;
     text-align: right;
+    top: -50px;
+    opacity: 0;
+    transition: top 0.5s, opacity 1s;
 }
 .subvi__typo strong b{
     font-weight: var(--font-minbold);
 }
+
+.subvi__typo.on strong{
+    top: 0px;
+    opacity: 1;
+}
 .subvi__typo h2{
+    position: relative;
     margin-top: var(--subvisual-margin-top);
     text-align: right;    
+    top: -25px;
+    opacity: 0;
+    transition: top 1s, opacity 1s;
+    transition-delay:0.5s;
+}
+.subvi__typo.on h2{
+    margin-top: var(--subvisual-margin-top);
+    text-align: right;
+    top: 0px;
+    opacity: 1;    
 }
 .subvi__typo span{
     display: block;
+    position: relative;
     margin-top: var(--subvisual-margin-top);
     margin-bottom: var(--subvisual-margin-bottom);
     text-align: right;
     line-height: var(--subvisual-line-height);
+    opacity:0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+.subvi__typo.on span{
+    opacity:1;
 }
 .subvi__typo__button{
     display: block;
+    position: relative;
     width: 95px;
     padding: 9px;
     margin-left: auto; 
     font-size: 16px;
     text-align: center;     
     border-bottom: 3px solid #ccc;
+    top: -75px;
+    opacity: 0;
+    transition: top 1.5s, opacity 1.5s;
+    transition-delay:1.5s;
+}
+.subvi__typo.on .subvi__typo__button{
+    top:0px;
+    opacity: 1;
 }
 .subvi__subbanner{
     position: relative;
@@ -534,11 +609,23 @@ header{
 /* 풋터 */
 
 .footer{
+    position: relative;
     text-align: center;
+    height: 300px;
+}
+.footer__cont{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.footlog{
+    margin-bottom: 30px;
 }
 .footer__menu ul{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .footer__menu ul li{
     padding: 0 20px 0 20px;
@@ -548,9 +635,13 @@ header{
     border-right: 1px solid var(--sub-title-color);
     border-left: 1px solid var(--sub-title-color);
 }
+.footer__info{
+    font-size: 14px;
+}
 .footer__info ul{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .footer__info ul li{
     padding: 0 10px 0 10px;

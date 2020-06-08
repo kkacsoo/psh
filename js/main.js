@@ -29,9 +29,12 @@ visualTypo.classList.add('on');
 
 // 서브비주얼01 애니메이션 함수
 const subElem = document.querySelector('.subvisual');
+const subElem02 = document.querySelector('.subvi')
 const subbannerElem = document.querySelector('.subvisual__subbanner');
 const subbannerTypo01Elem = document.querySelector('.subvisual__typo');
 const subbannerElem02 = document.querySelector('.subvi__subbanner');
+const subbannerElen02Elem = document.querySelector('.subvi__typo');
+const headerElem = document.querySelector('.global__header');
 
 function scrollHandler(){
     // let posY = window.pageYOffset; 
@@ -40,18 +43,35 @@ function scrollHandler(){
     // let a = 1 - posY/subElem.offsetTop;
     console.log(subElem.getBoundingClientRect().top);
 
-    if(subElem.getBoundingClientRect().top <= 86){
+    if(subElem.getBoundingClientRect().top <= 300){
         subbannerElem.classList.add('on');
-        subbannerElem02.classList.add('on');
         subbannerTypo01Elem.classList.add('on');
     }else{
         subbannerElem.classList.remove('on');
-        subbannerElem02.classList.remove('on');
-
+        subbannerTypo01Elem.classList.remove('on');
     }
 }
-
+function scrollHandler02(){
+    if(subElem02.getBoundingClientRect().top <= 300){
+        subbannerElem02.classList.add('on');
+        subbannerElen02Elem.classList.add('on');
+    }
+    else{
+        subbannerElem02.classList.remove('on');
+        subbannerElen02Elem.classList.remove('on');
+    }
+}
+function scrollHeaderHandler(){
+    if(subElem.getBoundingClientRect().top >=950){
+        headerElem.classList.remove('on');
+    }
+    else{
+        headerElem.classList.add('on');
+    }
+}
 addEventListener('scroll', scrollHandler);
+addEventListener('scroll',scrollHandler02);
+addEventListener('scroll',scrollHeaderHandler);
 
 /*top 버튼*/
 const topBt = document.querySelector('.top__bt');
