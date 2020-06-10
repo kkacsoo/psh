@@ -95,17 +95,18 @@ header{
 /* 메인비주얼 */
 .mainvisual{
     position: relative;
+    overflow: hidden;
 }
 .mainvisual .mainvisual__cont{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     background-image : url('../imgs/main_visual_02.jpg');
-    background-position: center;
-    background-size: cover;
+    background-size:110% 110%;
+    background-origin: content-box;
+    transition: 4s;
+}
+.mainvisual__cont.on{
+    background-size:100% 100%;
 }
 .mainvisual .mainvisual__typo  {
     position: absolute;
@@ -216,7 +217,7 @@ header{
     position: relative;
     top:-50px;
     opacity: 0;
-    transition: top 1s,opacity 2s;
+    transition: top 0.5s,opacity 1s;
 }
 .subvisual__typo.on strong{
     top: 0;
@@ -230,7 +231,7 @@ header{
     margin-top: var(--subvisual-margin-top);
     top: -25px;
     opacity: 0;
-    transition: top 1s, opacity 2s;
+    transition: top 0.5s, opacity 1s;
     transition-delay: 0.5s;
 }
 .subvisual__typo.on h2{
@@ -247,7 +248,7 @@ header{
     margin-top: var(--subvisual-margin-top);
     margin-bottom: var(--subvisual-margin-bottom);
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
     transition-delay: 1s;
 }
 .subvisual__typo.on span{
@@ -263,7 +264,7 @@ header{
     text-align: center;
     top: -70px;
     opacity: 0;
-    transition: top 2s, opacity 1.5s;
+    transition: top 1.5s, opacity 1.5s;
     transition-delay: 1.5s;
 }
 .subvisual__typo.on .subvisual__button{

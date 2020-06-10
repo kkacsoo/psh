@@ -22,6 +22,9 @@ addEventListener('resize', sectionLayout);
 // 메인비주얼 애니메이션 함수
 const visualTypo = document.querySelector('.mainvisual__typo');
 visualTypo.classList.add('on');
+
+const visualCont = document.querySelector('.mainvisual__cont');
+visualCont.classList.add('on');
 // function clickHandler(){
 //     visualTypo.classList.toggle('on');
 // }
