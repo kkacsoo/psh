@@ -462,6 +462,7 @@ header{
 }
 .slick-active img{
     opacity: 1 !important;
+    justify-content:space-between;
 }
 
 .slider__img strong{
@@ -581,6 +582,7 @@ header{
     line-height: 20px;
     opacity: 0.7;
 }
+
 
 /*TOP 아이콘*/
 .top__bt{
